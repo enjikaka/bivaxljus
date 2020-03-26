@@ -2,6 +2,7 @@
   --white: #fff;
   --yellow: #FEC445;
   --yellow-dark: #976D1A;
+  --half-golden-ratio-margin: 0.80901699437rem;
   --golden-ratio-margin: 1.61803398875rem;
 }
 
@@ -23,6 +24,7 @@ h1,
 h2,
 h3 {
   font-family: 'Playfair Display', serif;
+  margin: var(--golden-ratio-margin) 0 var(--half-golden-ratio-margin);
 }
 
 main {
@@ -42,6 +44,7 @@ main > header figure {
   margin: 0;
   margin-right: var(--golden-ratio-margin);
   color: var(--pink);
+  transform: translateY(5.5px);
 }
 
 main > header h1 {
@@ -53,10 +56,11 @@ article {
   background-color: var(--white);
   padding: calc(var(--golden-ratio-margin) / 2) var(--golden-ratio-margin);
   border-radius: var(--golden-ratio-margin);
-  margin: var(--golden-ratio-margin) 0 ;
+  margin: var(--golden-ratio-margin) 0;
 }
 
 p {
-  line-height: 1.4rem;
+  line-height: var(--golden-ratio-margin);
   text-align: justify;
+  margin: var(--golden-ratio-margin) 0;
 }
