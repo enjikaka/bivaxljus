@@ -1,13 +1,13 @@
 :root {
   --white: #fff;
-  --yellow: #FEC445;
+  --yellow: #FFAE24;
   --yellow-dark: #976D1A;
   --half-golden-ratio-margin: 0.80901699437em;
   --golden-ratio-margin: 1.61803398875em;
 }
 
 body {
-  background-color: var(--yellow);
+  background-color: black;
   color: var(--yellow-dark);
   font-family: 'Jaldi', sans-serif;
 }
@@ -36,6 +36,10 @@ footer {
   margin: 0 auto;
   width: 80vw;
   max-width: 600px;
+}
+
+footer {
+  text-align: center;
 }
 
 main > header {
