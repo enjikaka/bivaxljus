@@ -31,7 +31,8 @@ h3 {
   margin: var(--half-golden-ratio-margin) 0;
 }
 
-main {
+main,
+footer {
   margin: 0 auto;
   width: 80vw;
   max-width: 600px;
