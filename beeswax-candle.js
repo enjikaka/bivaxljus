@@ -1,4 +1,4 @@
-import { registerFunctionComponent } from 'https://unpkg.com/webact';
+import { registerFunctionComponent } from './webact.js';
 
 function BeeswaxCandle () {
   const { html, css } = this;

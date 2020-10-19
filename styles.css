@@ -12,7 +12,10 @@ body {
 }
 
 beeswax-candle {
+  display: block;
   margin: 2rem 0;
+  width: 150px;
+  height: 200px;
 }
 
 body {
