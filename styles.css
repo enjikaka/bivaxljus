@@ -6,10 +6,32 @@
   --golden-ratio-margin: 1.61803398875em;
 }
 
+html,
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+beeswax-candle {
+  margin: 2rem 0;
+}
+
 body {
   background-color: black;
   color: var(--yellow-dark);
-  font-family: 'Jaldi', sans-serif;
+  position: relative;
+}
+
+h1 {
+  color: var(--yellow);
+}
+
+starry-sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0,
+  right: 0;
+  z-index: -1;
 }
 
 svg {
@@ -18,17 +40,6 @@ svg {
 
 a {
   color: currentColor;
-}
-
-main > header h1 {
-  font-family: 'Baloo Paaji 2', cursive;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Playfair Display', serif;
-  margin: var(--half-golden-ratio-margin) 0;
 }
 
 main,
@@ -40,6 +51,8 @@ footer {
 
 footer {
   text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 2rem;
 }
 
 main > header {
@@ -59,7 +72,6 @@ main > header figure {
 main > header h1 {
   font-size: 3rem;
   margin: 0;
-  color: var(--purple-light);
 }
 
 article h2 {
