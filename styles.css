@@ -3,7 +3,7 @@
   --yellow: #FFAE24;
   --yellow-dark: #976D1A;
   --half-golden-ratio-margin: 0.80901699437em;
-  --golden-ratio-margin: 1.61803398875em;
+  --gr-rem: 1.61803398875rem;
 }
 
 html,
@@ -13,7 +13,7 @@ body {
 
 beeswax-candle {
   display: block;
-  margin: 2rem 0;
+  margin: var(--gr-rem) 0;
   width: 150px;
   height: 200px;
 }
@@ -63,7 +63,7 @@ main > header {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin-top: var(--golden-ratio-margin);
+  margin-top: var(--gr-rem);
 }
 
 main > header figure {
@@ -91,13 +91,29 @@ article p:last-child {
 
 article {
   background-color: var(--white);
-  padding: var(--golden-ratio-margin);
-  border-radius: var(--golden-ratio-margin);
-  margin: var(--golden-ratio-margin) 0;
+  padding: var(--gr-rem);
+  border-radius: calc(var(--gr-rem) / 2);
+  margin: var(--gr-rem) 0;
 }
 
 p {
-  line-height: var(--golden-ratio-margin);
+  line-height: var(--gr-rem);
   text-align: justify;
-  margin: var(--golden-ratio-margin) 0;
+  margin: var(--gr-rem) 0;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--gr-rem);
+  height: 180px;
+}
+
+.image-row picture,
+.image-row img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: calc(var(--gr-rem) / 4);
+  overflow: hidden;
 }
