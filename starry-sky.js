@@ -15,7 +15,9 @@ function StarrySky () {
       width: 100%;
       height: 100%;
       contain: strict;
+      transform: rotateZ(180deg);
     }
+
     #stars {
       width: 1px;
       height: 1px;
